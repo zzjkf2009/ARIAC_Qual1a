@@ -13,6 +13,7 @@
 #include <std_srvs/Trigger.h>
 #include <trajectory_msgs/JointTrajectory.h>
 #include <osrf_gear/VacuumGripperControl.h>
+#include <osrf_gear/AGVControl.h>
 #include <osrf_gear/VacuumGripperState.h>
 #include <tf/transform_listener.h>
 
@@ -50,7 +51,7 @@ public:
     joint_trajectory_publisher_ = node.advertise<trajectory_msgs::JointTrajectory>(
       "/ariac/arm/command", 10);
     gripper_service = node.serviceClient<osrf_gear::VacuumGripperControl>("/ariac/gripper/control");
-
+    tray_delivery_ = node.serviceClient<osrf_gear::AGVControl>("/ariac/agv1");
   }
 
   /// Called when a new message is received.
@@ -219,6 +220,11 @@ public:
   void tray_logical_camera_callback(const osrf_gear::LogicalCameraImage::ConstPtr & image_msg) {
     //ROS_INFO_STREAM("Logical camera_2: '" << image_msg->models.size() << "' objects.");
      num_tools_in_tray_ = image_msg->models.size() -2 ;
+     if(num_tools_in_tray_ == 5) {
+          osrf_gear::AGVControl srv;
+          srv.request.kit_type = "order_0_kit_0";
+          tray_delivery_.call(srv);
+     }
     // ROS_INFO_STREAM("Logical camera_2: '" << num_tools_in_tray_ << "' objects.");
   }
 
@@ -495,6 +501,7 @@ private:
   std::vector<int> pass_order2 {0,0};
   std::vector<int> pass_order3 {0,0};
   std::vector<int> pass_order4 {0,0};
+  ros::ServiceClient tray_delivery_;
   bool order_0_ever_attatched = false;
 };
 
