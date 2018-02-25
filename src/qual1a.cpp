@@ -199,7 +199,7 @@ public:
 
   /// Called when a new
   void tray_logical_camera_callback(const osrf_gear::LogicalCameraImage::ConstPtr & image_msg) {
-    ROS_INFO_STREAM("Logical camera_2: '" << image_msg->models.size() << "' objects.");
+    //ROS_INFO_STREAM("Logical camera_2: '" << image_msg->models.size() << "' objects.");
      num_tools_in_tray_ = image_msg->models.size() -2 ;
   }
 
