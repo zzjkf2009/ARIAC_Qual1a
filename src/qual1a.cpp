@@ -116,21 +116,21 @@ void joint_state_callback(
                 traj.joint_names.push_back("wrist_3_joint");
                 place_kit_tray1();
                 //std::vector<double> goal = {1.76, 2.06,-0.63, 1.5, 3.27, -1.51, 0.0};
-                std::vector<double> goal = {1.60, 2.1,-0.70, 1.4, 3.27, -1.51, 0.0};
+                //std::vector<double> goal;// = {1.60, 2.1,-0.70, 1.4, 3.27, -1.51, 0.0};
                 if(num_tools_in_tray_ == 0 && order_0_ == false) {
                         grasp_bin7();
-                        goal[3] = 1.37;
+                        std::vector<double> goal_0 = {0.38, 2.05,-0.12, 1.50, 3.27, -1.51, 0.0};
                         std::vector<double> middle_p = {1.5, 0.42, -1.0, 1.5, 3.58,-1.51,0.0};
                         std::vector<double> p1 = {1.76, 0.42, -0.47, 3.23,3.58,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
                                 move_to(p1,traj);
                         }
                         else
-                                move_to(middle_p,goal,traj,joint_state_msg,order_0_,pass_order0[1]);
+                                move_to(middle_p,goal_0,traj,joint_state_msg,order_0_,pass_order0[1]);
                 }
                 if(num_tools_in_tray_ == 1 && order_1_ == false) {
                         grasp_bin7();
-                        goal[3] = 1.40;
+                        std::vector<double> goal_1 = {1.13,2.1,-0.5,1.3, 3.58,-1.51,0.0};
                         std::vector<double> middle_p = {1.76, 0.1, -1.0, 1.5, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.0, 0.1, -0.5, 3.0,3.58,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -138,11 +138,11 @@ void joint_state_callback(
                                 move_to(middle_p,p2,traj,joint_state_msg,pass_order1[0]);
                         }
                         else
-                                move_to(middle_p,goal,traj,joint_state_msg,order_1_,pass_order1[1]);
+                                move_to(middle_p,goal_1,traj,joint_state_msg,order_1_,pass_order1[1]);
                 }
                 if(num_tools_in_tray_ == 2 && order_2_ == false) {
                         grasp_bin6();
-                        goal[3] = 1.43;
+                        goal = {1.45,2.1,-0.75,1.55, 3.58,-1.51,0.0};
                         std::vector<double> middle_p = {1.35, -0.46, -1.0, 2.0, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.0, -0.37, -0.50, 3.50,3.52,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -153,7 +153,7 @@ void joint_state_callback(
                 }
                 if(num_tools_in_tray_ == 3 && order_3_ == false) {
                         grasp_bin6();
-                        goal[3] = 1.47;
+                        goal= {1.60, 2.1,-0.70, 1.4, 3.27, -1.51, 0.0};
                         std::vector<double> middle_p = {1.20, -0.5, -1.1, 2.0, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.13, -0.35, -0.5, 3.02,3.27,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -164,7 +164,7 @@ void joint_state_callback(
                 }
                 if(num_tools_in_tray_ == 4 && order_4_ == false) {
                         grasp_bin6();
-                        goal[3] = 1.50;
+                        goal = {1.43,2.1,-0.70,1.40,3.27,-1.51,0.0};
                         std::vector<double> middle_p = {1.35, -0.30, -1.0, 2.0, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.26, -0.38, -0.50, 3.00,3.14,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -216,7 +216,7 @@ void logical_camera_callback(
 
 /// Called when a new
 void tray_logical_camera_callback(const osrf_gear::LogicalCameraImage::ConstPtr & image_msg) {
-        //ROS_INFO_STREAM("Logical camera_2: '" << image_msg->models.size() << "' objects.");
+        ROS_INFO_STREAM("Logical camera_2: '" << image_msg->models.size() << "' objects.");
         num_tools_in_tray_ = image_msg->models.size() -2;
         if(num_tools_in_tray_ == 5) {
                 osrf_gear::AGVControl srv;
@@ -441,7 +441,7 @@ void place_kit_tray1() {
 
         // if the relative position under tolerance enable the vacuum gripper
         if (under_tolerance(tolerance, relative_pose_tray1)) {
-                ros::Duration(0.1).sleep();
+                ros::Duration(0.15).sleep();
                 release_kit();
         }
 
@@ -498,6 +498,7 @@ std::vector<int> pass_order1 {0,0};
 std::vector<int> pass_order2 {0,0};
 std::vector<int> pass_order3 {0,0};
 std::vector<int> pass_order4 {0,0};
+std::vector<double> goal;
 };
 
 void proximity_sensor_callback(const sensor_msgs::Range::ConstPtr & msg) {
@@ -581,7 +582,7 @@ int main(int argc, char ** argv) {
 
         ROS_INFO("Setup complete.");
         start_competition(node);
-        // ros::Duration(0.5).sleep(); // sleep for half a second
+        ros::Duration(0.05).sleep(); // sleep for half a second
         ros::spin();
         //ros::spinOnce();  // This executes callbacks on new data until ctrl-c.
         //rate.sleep();
@@ -589,3 +590,7 @@ int main(int argc, char ** argv) {
 
         return 0;
 }
+
+
+
+
