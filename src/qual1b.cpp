@@ -158,7 +158,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 2 && order_2_ == false) {
                         ROS_INFO("gear 1 \n");
                         grasp_bin8();
-                        goal = {1.45,2.1,-0.75,1.53, 3.58,-1.51,0.0};
+                        goal = {1.45,2.1,-0.75,1.40, 3.58,-1.51,0.0};
                         std::vector<double> middle_p = {1.35, 0.4, -1.0, 2.00, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.0, 0.5, -0.55, 2.50,3.52,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -299,7 +299,7 @@ void move_to(const std::vector<double> &v1, trajectory_msgs::JointTrajectory& tr
 
 int isclose(const std::vector<double> &v1,const std::vector<double> &v2) {
         for(int i = 0; i< v1.size(); i++) {
-                if(abs(v1[i] - v2[i]) < 0.02)
+                if(abs(v1[i] - v2[i]) < 0.1)
                         continue;
                 else
                         return 0;
