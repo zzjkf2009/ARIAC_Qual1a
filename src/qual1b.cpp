@@ -120,7 +120,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 0 && order_0_ == false) {
                         ROS_INFO("rod 1\n");
                         grasp_bin7();
-                        goal[3] = 1.32;
+                        goal = {0.38, 2.05,-0.12, 1.50, 3.27, -1.51, 0.0};
                         std::vector<double> middle_p = {1.76, 0.37, -1.0, 1.75, 3.58,-1.51,0.0};
                         std::vector<double> p1 = {1.76, 0.42, -0.47, 3.23,3.58,-1.51,0.0};
                         std::vector<double> p2 = {1.76, 0.25, -0.47, 3.23,3.58,-1.51,0.0};
@@ -145,7 +145,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 1 && order_1_ == false) {
                         ROS_INFO("rod 2 \n");
                         grasp_bin7();
-                        goal[3] = 1.35;
+                        goal = {1.13,2.1,-0.5,1.3, 3.58,-1.51,0.0};
                         std::vector<double> middle_p = {1.76, 0.1, -1.0, 1.75, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.0, 0.1, -0.5, 3.0,3.58,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -158,7 +158,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 2 && order_2_ == false) {
                         ROS_INFO("gear 1 \n");
                         grasp_bin8();
-                        goal[3] = 1.40;
+                        goal = {1.45,2.1,-0.75,1.53, 3.58,-1.51,0.0};
                         std::vector<double> middle_p = {1.35, 0.4, -1.0, 2.00, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.0, 0.5, -0.55, 2.50,3.52,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -170,7 +170,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 3 && order_3_ == false) {
                         ROS_INFO("gear 2 \n");
                         grasp_bin8();
-                        goal[3] = 1.45;
+                        goal= {1.60, 2.1,-0.70, 1.4, 3.27, -1.51, 0.0};
                         std::vector<double> middle_p = {1.35, 0.4, -1.1, 2.0, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.05, 0.5, -0.5, 2.17,3.27,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -182,7 +182,7 @@ void joint_state_callback(
                 if(num_tools_in_tray_ == 4 && order_4_ == false) {
                         ROS_INFO("gear 3 \n");
                         grasp_bin8();
-                        goal[3] = 1.50;
+                        goal = {1.43,2.1,-0.70,1.40,3.27,-1.51,0.0};
                         std::vector<double> middle_p = {1.35, 0.40, -1.0, 2.0, 3.58,-1.51,0.0};
                         std::vector<double> p2 = {2.05, 0.5, -0.48, 1.95,3.14,-1.51,0.0};
                         if(gripper_state_attatch_ == false) {
@@ -603,7 +603,7 @@ int main(int argc, char ** argv) {
 
         ROS_INFO("Setup complete.");
         start_competition(node);
-        // ros::Duration(0.5).sleep(); // sleep for half a second
+         //ros::Duration(0.05).sleep(); // sleep for half a second
         ros::spin();
         //ros::spinOnce();  // This executes callbacks on new data until ctrl-c.
         //rate.sleep();
