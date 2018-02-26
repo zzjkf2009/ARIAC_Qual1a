@@ -44,7 +44,7 @@ roslaunch osrf_gear gear_playback.launch
 Or if you want to specify a specific log file:
 ```
 roslaunch osrf_gear gear_playback.launch state_log_path:=`pwd`/ariac_qual1_log/qual1/qual1a/gazebo/state.log
-
+```
 ### Store log file:
 In the home folder
 ```
