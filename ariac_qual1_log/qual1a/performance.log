@@ -1,0 +1,734 @@
+Gazebo multi-robot simulator, version 7.9.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1519602582 551134495) [Msg] Waiting for master.
+(1519602582 552121089) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1519602582 552298598) [Msg] Publicized address: 192.168.1.178
+(1519602585 273437400) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1519602585 280068349) applying Gaussian noise model with mean 0, stddev 0.001, bias -0
+(1519602585 285325202) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 291196604) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 312638948) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 333728638) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 508782468) ODESliderJoint::SetAnchor not implemented.
+(1519602585 512524292) Init world[ariac]
+(1519602585 514686898) Filename [/home/yzy/.ariac/log/gazebo/state.log], already exists. The log file will be overwritten.
+(1519602585 557808370) [Dbg] [ProximityRayPlugin.cc:74] Setting update rate of parent sensor to 20 Hz
+(1519602585 583813329) [Dbg] [ROSAriacTaskManagerPlugin.cc:200] ARIAC VERSION: 1.1.4
+(1519602585 583884168) [Dbg] [ROSAriacTaskManagerPlugin.cc:203] ARIAC COMPETITION MODE: 1
+(1519602585 618432276) [Dbg] [ROSLogicalCameraPlugin.cc:121] Using model frame prefix of: logical_camera_2_
+(1519602585 618635116) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1519602585 618774612) applying Gaussian noise model with mean 0, stddev 0.01, bias -0
+(1519602585 618926795) [Dbg] [ROSLogicalCameraPlugin.cc:159] Subscribing to gazebo topic: ~/logical_camera_2/link/logical_camera/models
+(1519602585 620217883) [Dbg] [ROSLogicalCameraPlugin.cc:162] Publishing to ROS topic: /ariac/logical_camera_2
+(1519602585 621588355) [Dbg] [ROSLogicalCameraPlugin.cc:121] Using model frame prefix of: logical_camera_1_
+(1519602585 621739319) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1519602585 621816732) applying Gaussian noise model with mean 0, stddev 0.01, bias -0
+(1519602585 621948242) [Dbg] [ROSLogicalCameraPlugin.cc:159] Subscribing to gazebo topic: ~/logical_camera_1/link/logical_camera/models
+(1519602585 623372412) [Dbg] [ROSLogicalCameraPlugin.cc:162] Publishing to ROS topic: /ariac/logical_camera_1
+(1519602585 632768486) [Dbg] [SideContactPlugin.cc:81] [deletion_wall] Watching collisions on: deletion_wall::sensing_link::collision
+(1519602585 632976201) [Dbg] [ObjectDisposalPlugin.cc:46] ObjectDisposalPlugin running at 5 Hz
+(1519602585 652011884) [Dbg] [SideContactPlugin.cc:81] [kit_tray_1] Watching collisions on: agv1::kit_tray_1::kit_tray_1::tray::tray_collision
+(1519602585 652139215) [Dbg] [ROSAriacKitTrayPlugin.cc:65] KitTrayPlugin running at 20 Hz
+(1519602585 652403418) [Dbg] [ROSAriacKitTrayPlugin.cc:173] agv1::kit_tray_1::kit_tray_1::tray: New subscription from node: /gazebo
+(1519602585 654969077) [Dbg] [ROSLogicalCameraPlugin.cc:121] Using model frame prefix of: quality_control_sensor_1_
+(1519602585 655088504) applying Gaussian noise model with mean 0, stddev 0.001, bias -0
+(1519602585 655140351) applying Gaussian noise model with mean 0, stddev 0.01, bias 0
+(1519602585 655208419) [Dbg] [ROSLogicalCameraPlugin.cc:159] Subscribing to gazebo topic: ~/quality_control_sensor_1/link/logical_camera/models
+(1519602585 656619219) [Dbg] [ROSLogicalCameraPlugin.cc:162] Publishing to ROS topic: /ariac/quality_control_sensor_1
+(1519602585 660495579) [Dbg] [SideContactPlugin.cc:81] [kit_tray_2] Watching collisions on: agv2::kit_tray_2::kit_tray_2::tray::tray_collision
+(1519602585 660607343) [Dbg] [ROSAriacKitTrayPlugin.cc:65] KitTrayPlugin running at 20 Hz
+(1511519602585 519602585 6663138231) 3138231) ) [Dbg] [ROSAriacKitTrayPlugin.cc:173] [Dbg] [ROSAriacKitTrayPlugin.cc:173] [Dbg] [ROSAriacKitTrayPlugin.cc:173] [Dbg] [ROSAriacKitTrayPlugin.cc:173] [Dbg] [ROSLogicalCameraPlugin.cc:121] agv2::kit_tray_2::kit_tray_2::trayUsing model frame prefix of: Using model frame prefix of: : New subscription from node: /gazeboodel frame prefix of: /gazebo
+uality_control_sensor_2_
+
+(1519602585 663280373) applying Gaussian noise model with mean 0, stddev 0.001, bias 0
+(1519602585 663348713) applying Gaussian noise model with mean 0, stddev 0.01, bias -0
+(1519602585 663433192) [Dbg] [ROSLogicalCameraPlugin.cc:159] Subscribing to gazebo topic: ~/quality_control_sensor_2/link/logical_camera/models
+(1519602585 664798544) [Dbg] [ROSLogicalCameraPlugin.cc:162] Publishing to ROS topic: /ariac/quality_control_sensor_2
+(1519602585 672090947) [Dbg] [ConveyorBeltPlugin.cc:47] Using belt power of: 0 %
+(1519602585 672156581) [Dbg] [ConveyorBeltPlugin.cc:53] Using joint name of: [belt_joint]
+(1519602585 672196139) [Dbg] [ConveyorBeltPlugin.cc:65] Using link name of: [conveyor_belt::conveyor_belt_moving::belt]
+(1519602585 687020679) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 687157499) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 688307298) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 689466317) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602585 848842019) ODESliderJoint::SetAnchor not implemented.
+(1519602586 43815111) [Msg] VacuumGripper plugin loaded
+(1519602586 253552381) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602586 253679420) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602586 254701332) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602586 255641645) [Wrn] [msgs.cc:1808] Conversion of sensor type[logical_camera] not suppported.
+(1519602586 847324543) ODESliderJoint::GetAnchor not implemented.
+(1519602592 25496761) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 1
+(1519602594 639584712) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 2
+(1519602596 978074849) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 3
+(1519602599 546624511) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 4
+(1519602602 147528866) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 5
+(1519602604 738781755) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 6
+(1519602606 938305139) [Dbg] [ROSAriacTaskManagerPlugin.cc:699] Handle start service called
+(1519602606 940206888) [Dbg] [ROSAriacTaskManagerPlugin.cc:798] Control conveyor belt called.
+(1519602606 942965659) [Dbg] [ROSConveyorBeltPlugin.cc:75] Conveyor control service called with: 100
+(1519602606 943044963) [Dbg] [ROSConveyorBeltPlugin.cc:78] Conveyor control service called by: /gazebo
+(1519602606 943112139) [Dbg] [ConveyorBeltPlugin.cc:147] Received power of: 100, setting velocity to: 0.2
+(1519602606 943233294) [Dbg] [ROSAriacTaskManagerPlugin.cc:821] Populate conveyor belt called.
+(1519602606 944241119) [Dbg] [ROSAriacTaskManagerPlugin.cc:684] New order to announce: order_0
+(1519602606 944420753) [Dbg] [ROSAriacTaskManagerPlugin.cc:835] Announcing order: order_0
+
+(1519602606 944510424) [Dbg] [ROSAriacTaskManagerPlugin.cc:842] Assigning order: <Order>
+Start time: [0]
+Kits:
+<kit type='order_0_kit_0'>
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [0.1 -0.2 0 0 0 0]
+</object>
+
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [-0.1 -0.2 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0.15 0.15 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [-0.15 0.15 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0 0.15 0 0 0 0]
+</object>
+
+</kit>
+
+</order>
+
+(1519602606 944982897) [Dbg] [AriacScorer.cpp:365] Assigned order: <Order>
+Start time: [0]
+Kits:
+<kit type='order_0_kit_0'>
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [0.1 -0.2 0 0 0 0]
+</object>
+
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [-0.1 -0.2 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0.15 0.15 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [-0.15 0.15 0 0 0 0]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0 0.15 0 0 0 0]
+</object>
+
+</kit>
+
+</order>
+
+(1519602607 390639414) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 7
+(1519602609 115486467) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602609 522880662) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602609 941383795) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602610 127248374) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602610 127306278) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602610 247282415) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 8
+(1519602610 320229501) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602610 431505691) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602610 431554362) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602610 633705907) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602610 633754901) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602610 749483578) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602611 37117599) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602611 37317961) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602611 92217827) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602611 137566546) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602611 137651072) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602611 137829715) [Dbg] [VacuumGripperPlugin.cc:476] Collision between 'bin7|piston_rod_part_2::link::collision_2' and 'robot::vacuum_gripper_link::vacuum_gripper_link_collision'
+(1519602611 139876313) [Dbg] [VacuumGripperPlugin.cc:522] Part attached to gripper: bin7|piston_rod_part_2
+(1519602611 565025159) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602611 929847785) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602612 405104328) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602612 851596653) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602613 110722461) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 9
+(1519602613 265676730) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602613 635366380) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602614 37261890) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602614 489193118) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602616 175155741) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 10
+(1519602619 132087641) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 11
+(1519602619 594297324) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602619 594849456) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602620 114243345) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602620 117711108) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602620 571903462) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602620 572996149) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602621 136728967) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602621 139737327) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602621 604482149) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602621 610375461) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602622 126821081) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602622 127505037) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602622 174962719) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 12
+(1519602622 654054001) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602622 655972400) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602623 355204423) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602623 357213850) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602625 397099653) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 13
+(1519602628 153955482) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602628 439580959) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 14
+(1519602628 647728879) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602629 49208088) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602629 521002773) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602629 983582639) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602630 422425105) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602630 771798843) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602630 809303473) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602630 809352123) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602630 910722227) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602630 910775061) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602630 910813077) [Dbg] [VacuumGripperPlugin.cc:476] Collision between 'bin7|piston_rod_part_5::link::collision_2' and 'robot::vacuum_gripper_link::vacuum_gripper_link_collision'
+(1519602630 912851312) [Dbg] [VacuumGripperPlugin.cc:522] Part attached to gripper: bin7|piston_rod_part_5
+(1519602631 255258116) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602631 639498761) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 15
+(1519602631 735991989) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602632 233332908) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602632 581724018) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602633 18507849) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602633 439311220) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602633 877933347) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602634 348729407) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602634 817502060) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602634 987296020) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 16
+(1519602635 197736382) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602638 172091846) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 17
+(1519602640 48637234) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602640 50144452) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602640 637657736) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602640 638569272) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602641 215548554) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602641 215816904) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602641 561294508) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 18
+(1519602641 775485574) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602641 775864484) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602642 317734930) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602642 317905857) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602642 854150408) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602642 855434679) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602643 364209287) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602643 367422381) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602644 127132720) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602644 131001951) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602644 736349197) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 19
+(1519602648 210828946) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 20
+(1519602650 60587277) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602650 489112978) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602650 940090734) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602651 345434571) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 21
+(1519602651 381920806) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602651 478952497) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602651 479004956) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602651 581385071) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602651 581434729) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602651 581472623) [Dbg] [VacuumGripperPlugin.cc:476] Collision between 'bin6|gear_part_5::link::collision' and 'robot::vacuum_gripper_link::vacuum_gripper_link_collision'
+(1519602651 585510518) [Dbg] [VacuumGripperPlugin.cc:522] Part attached to gripper: bin6|gear_part_5
+(1519602651 803326800) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602652 156126661) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602654 748634822) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 22
+(1519602658 196910712) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 23
+(1519602658 340899592) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602658 343674243) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602658 873284736) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602658 876972731) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602659 412875830) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602659 414117848) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602660 10763325) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602660 13564986) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602660 566989519) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602660 571801745) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602661 89910392) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602661 92297654) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602661 377569060) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 24
+(1519602661 707680771) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602661 708155612) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602662 485282111) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602662 486015582) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602664 915486154) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 25
+(1519602668 424612145) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 26
+(1519602669 264305904) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602669 737801317) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602670 152515492) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602670 546662018) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602670 933157376) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602671 327148580) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602671 389433610) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602671 389493845) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602671 593161378) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602671 593255861) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602671 699676610) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 27
+(1519602671 741625879) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602671 798404274) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602671 798473501) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602671 916449877) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602671 916503622) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602671 916528101) [Dbg] [VacuumGripperPlugin.cc:476] Collision between 'bin6|gear_part_7::link::collision_asymmetric_mark' and 'robot::vacuum_gripper_link::vacuum_gripper_link_collision'
+(1519602671 919773769) [Dbg] [VacuumGripperPlugin.cc:522] Part attached to gripper: bin6|gear_part_7
+(1519602672 230094609) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602672 669042284) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602675 588130526) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 28
+(1519602677 22403983) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602677 25256988) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602677 599427486) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602677 601900405) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602678 150841262) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602678 152670412) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602678 846302303) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602678 852669136) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602679 170874026) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 29
+(1519602679 523782855) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602679 526761044) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602680 87267046) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602680 89914555) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602680 646030271) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602680 648091764) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602681 398334546) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602681 399582899) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602682 522502802) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 30
+(1519602686 126332131) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 31
+(1519602687 658974165) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602688 74856805) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602688 521532750) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602689 11658758) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602689 530087009) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602689 575379316) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 32
+(1519602690 80484811) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602690 498772359) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602690 903256401) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602691 232864945) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602691 232923139) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602691 310932054) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602691 535790582) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602691 535895053) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602691 640552882) [Dbg] [VacuumGripperPlugin.cc:562] Number of collisions with gripper: 1
+(1519602691 640646481) [Dbg] [VacuumGripperPlugin.cc:566] More collisions than the minContactCount: 1
+(1519602691 640674082) [Dbg] [VacuumGripperPlugin.cc:476] Collision between 'bin6|gear_part_11::link::collision' and 'robot::vacuum_gripper_link::vacuum_gripper_link_collision'
+(1519602691 643735012) [Dbg] [VacuumGripperPlugin.cc:522] Part attached to gripper: bin6|gear_part_11
+(1519602691 731728268) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602692 130734662) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602692 541602996) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602692 973125439) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Enable
+(1519602693 7761323) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 33
+(1519602696 737668909) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 34
+(1519602697 136067203) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602697 137762268) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602697 692086354) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602697 693805463) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602698 331770546) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602698 333210517) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602698 909613431) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602698 909698442) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602699 543367175) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602699 545875738) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602700 214051332) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602700 219435638) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602700 527475018) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 35
+(1519602700 892620394) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602700 894078229) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602701 438870100) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602701 441433267) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602701 986700532) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602701 990322127) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602702 563299777) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602702 563562548) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602703 145950480) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602703 146312536) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602703 541276142) [Dbg] [ROSAriacKitTrayPlugin.cc:272] agv1::kit_tray_1::kit_tray_1::tray: Handle clear tray service called.
+(1519602703 541398700) [Dbg] [ROSAriacKitTrayPlugin.cc:230] Number of models in contact with the tray: 5
+(1519602703 541487419) [Dbg] [ROSAriacKitTrayPlugin.cc:237] Creating fixed joint: kit_tray_1_bin6|gear_part_5__joint__
+(1519602703 543650448) [Dbg] [ROSAriacKitTrayPlugin.cc:237] Creating fixed joint: kit_tray_1_bin6|gear_part_7__joint__
+(1519602703 545028469) [Dbg] [ROSAriacKitTrayPlugin.cc:237] Creating fixed joint: kit_tray_1_bin6|gear_part_11__joint__
+(1519602703 547128957) [Dbg] [ROSAriacKitTrayPlugin.cc:237] Creating fixed joint: kit_tray_1_bin7|piston_rod_part_2__joint__
+(1519602703 548904588) [Dbg] [ROSAriacKitTrayPlugin.cc:237] Creating fixed joint: kit_tray_1_bin7|piston_rod_part_5__joint__
+(1519602703 549636506) [Dbg] [ROSAriacTaskManagerPlugin.cc:738] Submit tray service called by: /gazebo
+(1519602703 549691415) [Dbg] [ROSAriacTaskManagerPlugin.cc:757] SubmitTray request received for tray: agv1::kit_tray_1::kit_tray_1::tray
+(1519602703 549809235) [Dbg] [AriacScorer.cpp:199] Scoring kit: <kit type='order_0_kit_0'>
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0.13152 0.026186 0.005125 -9.7e-05 -4e-06 1.42166]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0.204808 0.054715 0.00501 0.000627 -0.003321 0.68302]
+</object>
+
+<object>
+Type: [gear_part]
+Faulty: [false]
+Pose: [0.202695 0.11775 0.010943 0.012335 0.148476 1.63392]
+</object>
+
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [0.007469 -0.000593 0.00491 -0.000187 -0.002924 1.91319]
+</object>
+
+<object>
+Type: [piston_rod_part]
+Faulty: [false]
+Pose: [0.093049 0.182351 0.004743 -0.003365 0.004112 2.43794]
+</object>
+
+</kit>
+
+(1519602703 550287919) [Dbg] [AriacScorer.cpp:203] Comparing the 5 assigned objects with the current 5 objects
+(1519602703 550350672) [Dbg] [AriacScorer.cpp:217] Checking object counts
+(1519602703 550383267) [Dbg] [AriacScorer.cpp:227] Found 3 objects of type 'gear_part'
+(1519602703 550426454) [Dbg] [AriacScorer.cpp:227] Found 2 objects of type 'piston_rod_part'
+(1519602703 550459988) [Dbg] [AriacScorer.cpp:238] All objects on tray and no extra objects detected.
+(1519602703 550482932) [Dbg] [AriacScorer.cpp:242] Checking object poses
+(1519602703 550522560) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.13152 0.026186 0.005125 -9.7e-05 -4e-06 1.42166' with the assigned pose '0.15 0.15 0 0 0 0'
+(1519602703 550640801) [Dbg] [AriacScorer.cpp:267] Position error: 0.125185
+(1519602703 550670158) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.13152 0.026186 0.005125 -9.7e-05 -4e-06 1.42166' with the assigned pose '-0.15 0.15 0 0 0 0'
+(1519602703 550808147) [Dbg] [AriacScorer.cpp:267] Position error: 0.307544
+(1519602703 550848817) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.13152 0.026186 0.005125 -9.7e-05 -4e-06 1.42166' with the assigned pose '0 0.15 0 0 0 0'
+(1519602703 551006619) [Dbg] [AriacScorer.cpp:267] Position error: 0.18063
+(1519602703 551046448) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.204808 0.054715 0.00501 0.000627 -0.003321 0.68302' with the assigned pose '0.15 0.15 0 0 0 0'
+(1519602703 551205494) [Dbg] [AriacScorer.cpp:267] Position error: 0.109923
+(1519602703 551247107) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.204808 0.054715 0.00501 0.000627 -0.003321 0.68302' with the assigned pose '-0.15 0.15 0 0 0 0'
+(1519602703 551404867) [Dbg] [AriacScorer.cpp:267] Position error: 0.367379
+(1519602703 551445655) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.204808 0.054715 0.00501 0.000627 -0.003321 0.68302' with the assigned pose '0 0.15 0 0 0 0'
+(1519602703 551586494) [Dbg] [AriacScorer.cpp:267] Position error: 0.225888
+(1519602703 551630684) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.202695 0.11775 0.010943 0.012335 0.148476 1.63392' with the assigned pose '0.15 0.15 0 0 0 0'
+(1519602703 551742487) [Dbg] [AriacScorer.cpp:267] Position error: 0.0617805
+(1519602703 551771730) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.202695 0.11775 0.010943 0.012335 0.148476 1.63392' with the assigned pose '-0.15 0.15 0 0 0 0'
+(1519602703 551893531) [Dbg] [AriacScorer.cpp:267] Position error: 0.354166
+(1519602703 551922662) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.202695 0.11775 0.010943 0.012335 0.148476 1.63392' with the assigned pose '0 0.15 0 0 0 0'
+(1519602703 552044963) [Dbg] [AriacScorer.cpp:267] Position error: 0.205244
+(1519602703 552074677) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.007469 -0.000593 0.00491 -0.000187 -0.002924 1.91319' with the assigned pose '0.1 -0.2 0 0 0 0'
+(1519602703 552185016) [Dbg] [AriacScorer.cpp:267] Position error: 0.21983
+(1519602703 552214145) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.007469 -0.000593 0.00491 -0.000187 -0.002924 1.91319' with the assigned pose '-0.1 -0.2 0 0 0 0'
+(1519602703 552323949) [Dbg] [AriacScorer.cpp:267] Position error: 0.226523
+(1519602703 552353201) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.093049 0.182351 0.004743 -0.003365 0.004112 2.43794' with the assigned pose '0.1 -0.2 0 0 0 0'
+(1519602703 552462066) [Dbg] [AriacScorer.cpp:267] Position error: 0.382414
+(1519602703 552491022) [Dbg] [AriacScorer.cpp:261] Comparing pose '0.093049 0.182351 0.004743 -0.003365 0.004112 2.43794' with the assigned pose '-0.1 -0.2 0 0 0 0'
+(1519602703 552608775) [Dbg] [AriacScorer.cpp:267] Position error: 0.428322
+(1519602703 552645428) [Dbg] [AriacScorer.cpp:184] Score from tray 'agv1::kit_tray_1::kit_tray_1::tray': 10
+(1519602703 552703162) [Dbg] [ROSAriacTaskManagerPlugin.cc:766] Inspection result: 10
+(1519602703 554218603) [Dbg] [ROSAriacTaskManagerPlugin.cc:527] Current game score: 10
+(1519602703 554465185) [Dbg] [ROSAriacTaskManagerPlugin.cc:545] Order complete: order_0
+(1519602703 554524145) [Dbg] [ROSAriacTaskManagerPlugin.cc:853] Stopping order: order_0
+(1519602703 554589265) [Dbg] [AriacScorer.cpp:387] Unassign order request for: order_0
+(1519602703 554617450) [Dbg] [AriacScorer.cpp:406] Unassigning order: order_0
+(1519602703 554641953) [Dbg] [ROSAriacTaskManagerPlugin.cc:564] No more orders to process.
+(1519602703 557688580) [Dbg] [ROSAriacTaskManagerPlugin.cc:581] End of trial. Final score: 10
+Score breakdown:
+<game_score>
+Total game score: [10]
+Total process time: [29.01]
+Part travel time: [10.492]
+<order_score order_0>
+Total order score: [10]
+Time taken: [29.008]
+Complete: [true]
+<tray_score order_0_kit_0>
+Completion score: [10]
+Complete: [false]
+Submitted: [true]
+Part presence score: [5]
+All parts bonus: [5]
+Part pose score: [0]
+</tray_score>
+
+</order_score>
+
+</game_score>
+
+(1519602703 759164560) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602703 759703696) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602704 42983907) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 36
+(1519602704 333015664) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602704 335380243) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602704 930837645) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602704 933068059) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602705 166904825) [Dbg] [ROSAGVPlugin.cc:337] Disabling gravity on model: agv1
+(1519602705 489390669) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602705 489797538) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602706 38616571) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602706 40233531) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602706 704884691) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602706 710047684) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602707 252645719) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602707 254224662) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602707 549131378) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 37
+(1519602707 830595664) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602707 830847565) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602708 402396003) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602708 404061888) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602708 890586876) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602708 890695618) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602709 460341297) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602709 460518846) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602710 157680779) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602710 159859028) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602710 723527315) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602710 729280176) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602710 887373802) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 38
+(1519602711 218071678) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602711 218308206) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602711 777281184) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602711 778049837) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602712 329567873) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602712 330531619) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602712 905797095) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602712 907555841) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602713 491668738) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602713 492534317) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602714 45854062) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602714 46829742) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602714 232913433) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 39
+(1519602714 580672471) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602714 581918616) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602715 134205572) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602715 138136437) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602715 664847559) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602715 668646140) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602716 261251199) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602716 261637765) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602716 910020911) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602716 912626166) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602717 453457359) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602717 454911545) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602717 561750279) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 40
+(1519602717 968374141) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602717 969048132) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602718 525958235) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602718 529222565) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602719 83921767) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602719 86009817) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602719 760127966) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602719 763298272) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602720 260999428) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602720 263993321) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602720 734189552) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602720 734283803) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602720 826394339) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 41
+(1519602721 259253573) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602721 259582343) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602721 745799157) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602721 749418322) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602722 274725422) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602722 277826475) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602722 815737177) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602722 817058443) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602723 404626318) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602723 405237014) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602723 953021244) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602723 955511935) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602724 1504375) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 42
+(1519602724 448750839) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602724 451021775) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602724 991696949) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602724 994798952) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602725 463524358) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602725 467591800) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602726 43358866) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602726 49712963) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602726 627385023) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602726 630177668) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602727 193499666) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602727 196680254) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602727 227673420) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 43
+(1519602727 686813444) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602727 687025709) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602728 190946568) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602728 191654185) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602728 657155275) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602728 657284613) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602729 247321752) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602729 248897672) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602729 852060783) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602729 854524333) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602730 433934169) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602730 435539917) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602730 476816348) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 44
+(1519602731 24742907) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602731 25382105) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602731 51470268) [Dbg] [ROSAGVPlugin.cc:345] Delivery animation finished.
+(1519602731 58300099) [Dbg] [ROSAriacKitTrayPlugin.cc:284] agv1::kit_tray_1::kit_tray_1::tray: Handle clear tray service called by: /gazebo
+(1519602731 58382997) [Dbg] [SideContactPlugin.cc:211] Teleporting model: bin6|gear_part_5
+(1519602731 58447226) [Dbg] [SideContactPlugin.cc:211] Teleporting model: bin6|gear_part_7
+(1519602731 58494735) [Dbg] [SideContactPlugin.cc:211] Teleporting model: bin6|gear_part_11
+(1519602731 58528810) [Dbg] [SideContactPlugin.cc:211] Teleporting model: bin7|piston_rod_part_2
+(1519602731 58561181) [Dbg] [SideContactPlugin.cc:211] Teleporting model: bin7|piston_rod_part_5
+(1519602731 485029464) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602731 485727560) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602731 967419949) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602731 968113805) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602732 559489045) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602732 561079115) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602733 172490589) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602733 174007437) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602733 686418701) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 45
+(1519602733 760321825) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602733 760887537) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602734 341125180) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602734 341698187) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602734 803014375) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602734 803117827) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602735 299808975) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602735 301445693) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602735 908564339) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602735 910070789) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602736 470883010) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602736 473727930) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602736 847120379) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 46
+(1519602736 986016945) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602736 987784939) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602737 500043431) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602737 500844707) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602738 37598789) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602738 39769491) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602738 539023027) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602738 546103405) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602739 99927650) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602739 101722765) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602739 598369067) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602739 598725757) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602739 929312984) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 47
+(1519602740 131113753) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602740 132845550) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602740 635799413) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602740 636726968) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602741 83567185) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602741 86880015) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602741 684332997) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602741 685313186) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602742 310049427) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602742 310455320) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602742 830099196) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602742 830218634) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602742 992973258) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 48
+(1519602743 352338321) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602743 354524400) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602743 861126277) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602743 861762301) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602744 321414444) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602744 323837838) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602744 908860800) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602744 909153050) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602745 499570280) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602745 502471162) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602746 28363047) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 49
+(1519602746 65318853) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602746 65516070) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602746 564534439) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602746 566046327) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602747 74273828) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602747 76655257) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602747 528379529) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602747 531035390) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602748 156269433) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602748 159102206) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602748 676408828) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602748 676734322) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602749 61779994) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 50
+(1519602749 148313760) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602749 151496906) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602749 638143559) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602749 638492845) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602750 159826950) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602750 160835414) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602750 664348694) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602750 664533768) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602751 202968452) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602751 207281964) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602751 678280679) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602751 681019226) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602752 112373579) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 51
+(1519602752 197597855) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602752 200369015) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602752 657724012) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602752 658140653) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602753 260161763) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602753 262129959) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602753 795525594) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602753 796717737) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602754 348407144) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602754 349707152) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602754 873965226) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602754 874075178) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602755 278071587) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 52
+(1519602755 375469101) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602755 378857515) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602755 877263873) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602755 877637938) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602756 383966619) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602756 386609090) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602756 908252237) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602756 908512404) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602757 446376288) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602757 447422062) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602758 25311318) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602758 28196670) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602758 286515108) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 53
+(1519602758 537092718) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602758 539317148) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602758 977674579) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602758 979663080) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602759 497073363) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602759 498146976) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602760 43369987) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602760 45919716) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602760 605972117) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602760 606325237) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602761 119765024) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602761 124267632) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602761 325741722) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 54
+(1519602761 609820920) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602761 610464052) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602761 828574929) [Dbg] [ROSAGVPlugin.cc:390] Return animation finished.
+(1519602762 140166691) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602762 140531553) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602762 611760986) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602762 614493399) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602763 168734351) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602763 170174909) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602763 773639635) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602763 777682351) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602764 254023470) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602764 256162294) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602764 464817599) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 55
+(1519602764 714832737) [Dbg] [ROSVacuumGripperPlugin.cc:113] Gripper control requested: Disable
+(1519602764 716068901) [Dbg] [VacuumGripperPlugin.cc:551] Detaching part from gripper.
+(1519602767 653668580) [Dbg] [ROSAriacTaskManagerPlugin.cc:493] Sim time: 56
